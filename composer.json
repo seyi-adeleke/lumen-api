@@ -17,12 +17,16 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "classmap": [
+            "tests/",
+            "database/seeds"
+        ]
     },
     "autoload-dev": {
         "classmap": [
             "tests/",
-            "database/"
+            "database/seeds"
         ]
     },
     "scripts": {

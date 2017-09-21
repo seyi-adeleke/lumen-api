@@ -12,5 +12,11 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return 'hello world';
 });
+
+
+$router->get('/foo', function () {
+    return 'Hello World';
+});
+
