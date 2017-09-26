@@ -37,6 +37,6 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      */
     public function posts() 
     {
-        return $this->hasMany('App\Posts');
+        return $this->hasMany('App\Post');
     }
 }

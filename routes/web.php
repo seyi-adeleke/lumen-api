@@ -16,7 +16,10 @@ $router->get('/', function () use ($router) {
 });
 
 
-$router->get('/foo', function () {
-    return 'Hello World';
-});
+// $router->get('/{id}', 'HomeController@someMethod');
 
+$router->get('/foo', 'HomeController@usersPosts');
+
+$router->get('/{id}', 'HomeController@getUsersPosts');
+
+$router->post('/newuser', 'HomeController@createNewUser');
